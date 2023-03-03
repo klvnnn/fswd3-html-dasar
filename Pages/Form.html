@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Pendaftaran SIB 2023</h1>
+    <form>
+        <label for="fname">Nama Lengkap</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Masukkan Nama Lengkap"><br>
+        <label for="lname">Email</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Masukkan email"><br>
+        <label for="lname">No. HP</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Masukkan no. HP">
+        
+        <p>Jenis Kelamin</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Laki-laki</label><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">Perempuan</label><br>
+        
+        <p><b>Jurusan</b></p>
+        <select>
+            <option value="volvo">Teknik Informatika</option>
+            <option value="saab">Teknik Pertambangan</option>
+            <option value="fiat">Seni Rupa</option>
+            <option value="audi">DKV</option>
+        </select>
+
+        <p><b>Alamat</b></p>
+        <textarea name="message" rows="10" cols="30">Masukkan Alamat</textarea>
+        
+        <p>Foto</p>
+        <form action="/action_page.php">
+        <label for="myfile"></label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit" value="Daftar">
+        </form>
+    </form>
+</body>
+</html>
