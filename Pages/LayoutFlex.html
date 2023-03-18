@@ -1,193 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Flexbox</title>
     <style>
-        body{
-            background-color: bisque;
-        }
+      body {
+        background-color: bisque;
+      }
 
-        .wrapper {
-            display: flex;
-            height: 650px;
-            width: 400px;
-            flex-direction: column;
-            gap: 10px;
-        }
+      .wrapper {
+        display: flex;
+        height: 650px;
+        width: 400px;
+        flex-direction: column;
+        gap: 10px;
+      }
 
-        .wrapper1 {
-            display: flex;
-            height: 400px;
-            width: 400px;
-            flex-direction: row;
-            gap: 10px;
-        }
+      .wrapper1 {
+        display: flex;
+        height: 400px;
+        width: 400px;
+        flex-direction: row;
+        gap: 10px;
+      }
 
-        .wrap-content1 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            gap: 10px;
-        }
+      .wrap-content1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+      }
 
-        .box1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50%;
-            background-color: aquamarine;
-        }
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        background-color: aquamarine;
+      }
 
-        .box2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50%;
-            background-color: coral;
-        }
+      .box2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        background-color: coral;
+      }
 
-        .wrap-content2 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            gap: 10px;
-        }
+      .wrap-content2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+      }
 
-        .box3 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 75%;
-            background-color: blueviolet;
-        }
+      .box3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+        background-color: blueviolet;
+      }
 
-        .wrap-content3 {
-            display: flex;
-            flex-direction: row;
-            height: 75%;
-            gap: 10px;
-        }
+      .wrap-content3 {
+        display: flex;
+        flex-direction: row;
+        height: 75%;
+        gap: 10px;
+      }
 
-        .wrap-content4 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            gap: 10px;
-        }
+      .wrap-content4 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+      }
 
-        .box4 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 66.66%;
-            background-color: burlywood;
-        }
+      .box4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 66.66%;
+        background-color: burlywood;
+      }
 
-        .box5 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 33.33%;
-            background-color: crimson;
-        }
+      .box5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33.33%;
+        background-color: crimson;
+      }
 
-        .wrap-content5 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            gap: 10px;
-        }
+      .wrap-content5 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+      }
 
-        .box6 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 33.33%;
-            background-color: brown;
-        }
+      .box6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33.33%;
+        background-color: brown;
+      }
 
-        .box7 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 66.66%;
-            background-color: rgb(16, 52, 159);
-        }
+      .box7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 66.66%;
+        background-color: rgb(16, 52, 159);
+      }
 
-        .wrapper2 {
-            display: flex;
-            height: 250px;
-            width: 400px;
-            flex-direction: column;
-            gap: 10px;
-        }
+      .wrapper2 {
+        display: flex;
+        height: 250px;
+        width: 400px;
+        flex-direction: column;
+        gap: 10px;
+      }
 
-        .wrap-content6 {
-            display: flex;
-            height: 50%;
-            flex-direction: row;
-            gap: 10px;
-        }
+      .wrap-content6 {
+        display: flex;
+        height: 50%;
+        flex-direction: row;
+        gap: 10px;
+      }
 
-        .box8 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 66.66%;
-            background-color: rgb(204, 59, 206);
-        }
+      .box8 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66.66%;
+        background-color: rgb(204, 59, 206);
+      }
 
-        .box9 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 33.33%;
-            background-color: rgb(5, 20, 135);
-        }
+      .box9 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33.33%;
+        background-color: rgb(5, 20, 135);
+      }
 
-        .box10 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50%;
-            background-color: rgb(42, 165, 128);
-        }
+      .box10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        background-color: rgb(42, 165, 128);
+      }
     </style>
-</head>
-<body>
-<center>
-    <h1>CSS Flex</h1>
-    <div class="wrapper">
+  </head>
+  <body>
+    <center>
+      <h1>CSS Flex</h1>
+      <div class="wrapper">
         <div class="wrapper1">
-            <div class="wrap-content1">
-                <div class="box1"><img src="../Assets/icons/bitcoin.png" alt=""></div>
-                <div class="box2"><img src="../Assets/icons/dailyart.png" alt=""></div>
+          <div class="wrap-content1">
+            <div class="box1">
+              <img src="../Assets/icons/bitcoin.png" alt="" />
             </div>
-            <div class="wrap-content2">
-                <div class="box3"><img src="../Assets/icons/doom-logo.png" alt=""></div>
-                <div class="wrap-content3">
-                    <div class="wrap-content4">
-                        <div class="box4"><img src="../Assets/icons/figma.png" alt=""></div>
-                        <div class="box5"><img src="../Assets/icons/fortnite.png" alt=""></div>
-                    </div>
-                    <div class="wrap-content5">
-                        <div class="box6"><img src="../Assets/icons/minecraft-logo.png" alt=""></div>
-                        <div class="box7"><img src="../Assets/icons/nintendo-switch-logo.png" alt=""></div>
-                    </div>
+            <div class="box2">
+              <img src="../Assets/icons/dailyart.png" alt="" />
+            </div>
+          </div>
+          <div class="wrap-content2">
+            <div class="box3">
+              <img src="../Assets/icons/doom-logo.png" alt="" />
+            </div>
+            <div class="wrap-content3">
+              <div class="wrap-content4">
+                <div class="box4">
+                  <img src="../Assets/icons/figma.png" alt="" />
                 </div>
+                <div class="box5">
+                  <img src="../Assets/icons/fortnite.png" alt="" />
+                </div>
+              </div>
+              <div class="wrap-content5">
+                <div class="box6">
+                  <img src="../Assets/icons/minecraft-logo.png" alt="" />
+                </div>
+                <div class="box7">
+                  <img src="../Assets/icons/nintendo-switch-logo.png" alt="" />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="wrapper2">
-            <div class="wrap-content6">
-                <div class="box8"><img src="../Assets/icons/nintendo-wii-u.png" alt=""></div>
-                <div class="box9"><img src="../Assets/icons/undertale-heart.png" alt=""></div>
+          <div class="wrap-content6">
+            <div class="box8">
+              <img src="../Assets/icons/nintendo-wii-u.png" alt="" />
             </div>
-            <div class="box10"><img src="../Assets/icons/valorant.png" alt=""></div>
+            <div class="box9">
+              <img src="../Assets/icons/undertale-heart.png" alt="" />
+            </div>
+          </div>
+          <div class="box10">
+            <img src="../Assets/icons/valorant.png" alt="" />
+          </div>
         </div>
-    </div>
-</center>
-</body>
+      </div>
+    </center>
+  </body>
 </html>
